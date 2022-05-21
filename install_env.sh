@@ -3,7 +3,8 @@ conda activate codeGen_env
 conda config --add channels conda-forge
 conda config --add channels pytorch
 
-conda install pytorch torchvision torchaudio cudatoolkit=11.0 six scikit-learn stringcase transformers ply slimit astunparse submitit
+conda install pytorch torchvision torchaudio cudatoolkit-dev=11.3 
+conda install six scikit-learn stringcase transformers ply slimit astunparse submitit
 pip install cython
 cd codegen_sources/model/tools
 git clone https://github.com/glample/fastBPE.git
